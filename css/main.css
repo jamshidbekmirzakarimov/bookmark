@@ -361,7 +361,7 @@ img {
   align-items: center;
   justify-content: center;
   width: 280px;
-  padding: 49px 24px 24px 24px;
+  padding: 49px 22px 24px 22px;
   background: var(--main-bg-color);
   box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
   border-radius: 15px;
@@ -452,7 +452,13 @@ img {
   border-radius: 5px;
   padding: 10px 34px;
   cursor: pointer;
-  
+  border: 2px solid transparent;
+}
+
+.download-extention:hover{
+  background-color: transparent;
+  color: var(--main-btn-color);
+  border: 2px solid var(--main-btn-color);
 }
 /* ***** DOWNLOAD SECTION END ***** */
 /* ********** QUESTIONS SECTION START *********** */
@@ -497,10 +503,12 @@ details {
   /* margin-left: auto; */
   /* display: flex;
   align-items: center; */
+  cursor: pointer;
 }
 
 details[open] summary .summary-chevron-up {
   transform: rotate(-180deg);
+  color: var(--section-btn-color);
 }
 
 summary {
@@ -515,8 +523,8 @@ summary {
 }
 
 .last{
-    border-bottom: 1px solid #242a452c;
-    margin-bottom: 54px;
+  border-bottom: 1px solid #242a452c;
+  margin-bottom: 54px;
 }
 
 .summary-chevron-up {
@@ -535,6 +543,10 @@ summary {
   color: var(--main-text-color);
 }
 
+summary:hover .summary-title{
+  color: var(--section-btn-color);
+}
+
 .summary-content {
   font-weight: 400;
   font-size: 15px;
@@ -544,4 +556,115 @@ summary {
 }
 
 /* ********** QUESTIONS SECTION END *********** */
+
+/* ******** CONTACTS SECTION START ******* */
+.contcts-section {
+  background-color: var(--main-btn-color);
+}
+
+.cotacts-section-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 58px;
+  padding-bottom: 74px;
+}
+
+.contacts-section-title {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: var(--main-bg-color);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.contacts-section-subtitle {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: var(--main-bg-color);
+  margin-bottom: 36px;
+  margin-top: 0px;
+  width: 408px;
+}
+.input-label{
+  display: flex;
+  align-items: center;
+  /* width: 442px; */
+}
+
+.email-input{
+  width: 300px;
+  background-color: var(--main-bg-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-right: 16px;
+}
+.input-btn { 
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: var(--main-bg-color);
+  background: var(--section-btn-color);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  
+}
+
+.email-input:not(:placeholder-shown):not(:focus):valid {
+  border: 2px solid var(--section-btn-color);
+}
+
+.email-input:not(:placeholder-shown):not(:focus):invalid {
+  border: 2px solid var(--section-btn-color);
+  color: var(--article-bg-color);
+  background-image: url(../images/error-disc.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 120px) center;
+}
+
+/* .email-input:not(:placeholder-shown):not(:focus):invalid + .invalid-text:active{
+  color: var(--section-btn-color);
+} */
+
+.email-input:not(:placeholder-shown):not(:focus):invalid + .input-btn{
+  border: 2px solid var(--section-btn-color);
+  background-color: var(--main-bg-color);
+  color: var(--section-btn-color);
+}
+
+.email-input::placeholder{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: rgba(36, 42, 69, 0.250109);
+}
+
+.invalid-text{
+  display: none;
+  color: transparent;
+  user-select: none;
+  padding-top: 8px;
+  padding-left: 10px;
+  font-style: italic;
+}
+/* ******** CONTACTS SECTION END ******* */
 /* ****** SITE MAIN END ******* */
