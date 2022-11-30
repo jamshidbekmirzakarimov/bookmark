@@ -668,3 +668,63 @@ summary:hover .summary-title{
 }
 /* ******** CONTACTS SECTION END ******* */
 /* ****** SITE MAIN END ******* */
+
+/* ******** SITE FOOTER START ******** */
+
+.site-footer {
+  background-color: var(--main-text-color);
+}
+
+.site-footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding: 32px;
+}
+.site-footer-start {
+  display: flex;
+  align-items: center;
+}
+.site-footer-logo {
+  margin-right: 65px;
+}
+.site-footer-list {
+  display: flex;
+  align-items: center;
+}
+.site-footer-item:nth-child(1){
+  margin-right: 44px;
+}
+.site-footer-item:nth-child(2){
+  margin-right: 48px;
+}
+.site-footer-item-link {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 1.5px;
+  color: var(--main-bg-color);
+}
+
+.site-footer-item-link:hover{
+  color: var(--section-btn-color);
+}
+.site-footer-social-list {
+  display: flex;
+  align-items: center;
+}
+.site-footer-social-item{
+  margin-right: 40px;
+}
+.site-footer-social-item-link {
+  color: var(--main-bg-color);
+}
+
+.site-footer-social-item-link:hover{
+  color: var(--section-btn-color);
+}
+/* ************ SITE FOOTER END ********** */
