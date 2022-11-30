@@ -213,9 +213,7 @@ img {
 
 /* ******* FEATURES SECTION START ****** */
 
-
-.features-section{
-
+.features-section {
 }
 .features-section-title {
   font-size: 32px;
@@ -261,7 +259,7 @@ img {
   padding-left: 40px;
 }
 
-#features-section-content:target{
+#features-section-content:target {
   display: block;
 }
 
@@ -274,7 +272,7 @@ img {
   line-height: 17px;
   text-align: center;
   letter-spacing: 0.533333px;
-  color: #242a45;
+  color: var(--main-text-color);
   mix-blend-mode: normal;
   opacity: 0.75;
   padding-bottom: 27px;
@@ -285,7 +283,7 @@ img {
 .features-section-content {
   display: none;
   padding-top: 129px;
-   padding-bottom: 295px;
+  padding-bottom: 295px;
   background-image: url(../images/features-section-bg.png);
   background-repeat: no-repeat;
   background-position: calc(50% - 500px) calc(50% - 50px);
@@ -322,7 +320,141 @@ img {
   letter-spacing: 0.25px;
   color: var(--main-bg-color);
   padding: 10px 24px;
-  
 }
 /* ******* FEATURES SECTION END ****** */
+
+/* ***** DOWNLOAD SECTION START ***** */
+.download-section {
+  padding: 149px;
+}
+
+.download-section-title {
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: var(--main-text-color);
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.download-section-subtitle {
+  width: 540px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+.download-section-list {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.download-section-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  padding: 49px 24px 24px 24px;
+  background: var(--main-bg-color);
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.download-section-item:nth-child(2){
+  margin-bottom: -50px;
+}
+
+.download-section-item:nth-child(3){
+  margin-bottom: -100px;
+}
+.download-section-item::before{
+  content: "";
+  display: block; 
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+  background-size: 102px;
+  width: 102px;
+  height: 102px;
+  margin-bottom: 32px;
+}
+
+.download-section-item:nth-child(1)::before{
+  background-image: url(../images/chrome.svg);
+}
+
+.download-section-item:nth-child(2)::before{
+  background-image: url(../images/fairbox.svg);
+}
+
+.download-section-item:nth-child(3)::before{
+  background-image: url(../images/opera.svg);
+  width: 110px;
+  height: 120px;
+}
+
+.download-section-item::after{
+  position: absolute;
+  content: "";
+  display: block; 
+  background-image: url(../images/oval.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-position: calc(50% + 0px); */
+  background-size: 300px;
+  width: 100%;
+  height: 10px;
+  margin-bottom: 32px;
+  top: calc(50% + 75px);
+}
+.download-section-item-title {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: var(--main-text-color);
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.download-section-item-subtitle {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--main-text-color);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-top: 0;
+  margin-bottom: 60px; 
+  
+}
+.download-extention {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: var(--main-bg-color);
+  background: var(--main-btn-color);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  padding: 10px 34px;
+  cursor: pointer;
+  
+}
+/* ***** DOWNLOAD SECTION END ***** */
 /* ****** SITE MAIN END ******* */
