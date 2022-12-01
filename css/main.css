@@ -38,6 +38,7 @@ html {
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 img {
@@ -211,6 +212,12 @@ img {
 }
 /* ********* HERO SECTION END ******** */
 
+
+
+
+
+
+
 /* ******* FEATURES SECTION START ****** */
 
 .features-section-title {
@@ -239,14 +246,13 @@ img {
   margin-top: 0;
   margin-bottom: 72px;
 }
-.features-section-list {
+/* .features-section-list {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   padding-right: 35px;
   padding-left: 35px;
-  /* padding-bottom: 27px; */
   border-bottom: 1px solid #495dcf33;
   width: 900px;
   padding-bottom: 27px;
@@ -262,6 +268,10 @@ img {
 }
 #features-section-search:target{
   display: block;
+}
+
+#features-section-shape:target ~ #features-section-search{
+  display: none;
 }
 #features-section-shape{
   display: block;
@@ -332,6 +342,12 @@ img {
   margin-top: 0;
   margin-bottom: 32px;
 }
+*/
+
+.features-section{
+  position: relative;
+  padding-bottom: 300px;
+}
 .features-section-end-more-info {
   background: var(--main-btn-color);
   box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
@@ -340,13 +356,99 @@ img {
   line-height: 28px;
   letter-spacing: 0.25px;
   color: var(--main-bg-color);
-  padding: 10px 24px;
+  padding: 10px 24px; 
+} 
+
+.tablink-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+  background-color: var(--main-bg-color);
+  border-bottom: 1px solid #495dcf33;
 }
+
+
+.tab-content-box{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.tablink {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.533333px;
+  color: var(--main-text-color);
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  border: none;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  padding-bottom: 27px;
+  background-color: transparent;
+  margin-right: 90px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tablink:last-child{
+  margin-right: 0;
+}
+
+ .tablink:focus {
+  border-bottom: 4px solid var(--section-btn-color);
+}
+
+.tabcontent {
+  display: none;
+}
+
+.features-section-image{
+  position: absolute;
+  right: calc(50% - 0px);
+}
+
+.tabcontent-wrapper{
+  display: flex;
+  align-items: flex-start;
+}
+
+.tabcontent-end{
+  margin-left: auto;
+  width: 445px;
+  margin-top: 50px;
+}
+.tabcontent-end-title {
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+  color: var(--main-text-color);
+  margin-top: 0;
+  margin-bottom: 16px;
+  
+}
+.tabcontent-end-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-text-color);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  width: 445px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
 /* ******* FEATURES SECTION END ****** */
+
+
+
 
 /* ***** DOWNLOAD SECTION START ***** */
 .download-section {
-  padding: 149px;
+  padding-bottom: 149px;
 }
 
 .download-section-title {
@@ -374,11 +476,11 @@ img {
 .download-section-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 34px;
 }
 
 .download-section-item {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -424,7 +526,6 @@ img {
 }
 
 .download-section-item::after{
-  position: absolute;
   content: "";
   display: block; 
   background-image: url(../images/oval.svg);
@@ -448,8 +549,6 @@ img {
 }
 
 .download-section-item-subtitle {
-  font-family: 'Rubik';
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 28px;
@@ -462,9 +561,6 @@ img {
   
 }
 .download-extention {
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 500;
   font-size: 14px;
   line-height: 28px;
   text-align: center;
@@ -750,4 +846,5 @@ summary:hover .summary-title{
 .site-footer-social-item-link:hover{
   color: var(--section-btn-color);
 }
+
 /* ************ SITE FOOTER END ********** */
